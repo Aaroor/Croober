@@ -14,3 +14,15 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/','FrontPageController@index');
+//Route::post('create','pageController@create');
+
+//Quiz route start
+# Quiz Management
+Route::group(array('prefix' => 'quiz'), function () {
+    //
+//    Route::get('/', array('as' => 'quiz', 'uses' => 'QuizController@create'));
+//    Route::get('index', array('as' => 'index', 'uses' => 'QuizController@index'));
+
+});
